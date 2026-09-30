@@ -102,7 +102,7 @@ export function validateWebhookSignature(body: string, signature: string, secret
 * your webhook secret
 *
 */
-export function validatePaymentVerification(payload: RazorpayVerifyPayment | RazorpayVerifySubscription | RazorpayVerifyPaymentLink, signature: string, secret: string): boolean
+export function validatePaymentVerification(payload: RazorpayVerifyPayment | RazorpayVerifySubscription | RazorpayVerifyPaymentLink | RazorpayVerifyInvoicePayment, signature: string, secret: string): boolean
 
 /**
 * given an object , returns prettified string
